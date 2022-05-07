@@ -1,0 +1,14 @@
+import { StyleSheet, Text } from "react-native";
+import React from "react";
+import Colors from "../../utils/colors";
+
+export default function InstructionText({ children, style }) {
+  return <Text style={[styles.instructionText, style]}>{children}</Text>;
+}
+
+const styles = StyleSheet.create({
+  instructionText: {
+    color: Colors.yellow,
+    fontSize: 24,
+  },
+});
